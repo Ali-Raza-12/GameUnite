@@ -1,0 +1,48 @@
+.trending-container {
+  width: 90vw;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #0f0c29;
+  border-radius: 10px;
+}
+
+.trending-section {
+  text-align: center;
+}
+
+.trending-head {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.trending-games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.trending-games img {
+  padding-top: 10px;
+  width: 25%;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.trending-games img:hover {
+  transform: scale(1.03);
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  .trending-games img {
+    width: calc(50% - 20px); /* Adjust image width for smaller screens */
+    margin: 10px; /* Adjust margin for smaller screens */
+  }
+}
